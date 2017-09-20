@@ -1,4 +1,285 @@
 html,
 body {
   font-size: 16px;
+  font-family: Helvetica, sans-serif;
+}
+
+/* Style for header */
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+  font-size: 2rem;
+  padding: 20px 24px;
+}
+
+.headerbox {
+  display: flex;
+  align-items: center;
+  height: 2rem;
+}
+
+.headerbox img {
+  height: 5rem;
+}
+
+.headerbox span {
+  color: black;
+  font-weight: 600;
+}
+
+.headerbox span:last-child {
+  color: grey;
+  font-weight: normal;
+}
+
+nav span {
+  margin-right: 1rem;
+}
+
+nav span:last-child {
+  margin-right: 0;
+}
+
+/* Style for Mission Statement */
+.statementbox {
+  max-width: 100%;
+  display: flex;
+  padding: 2.5rem 2rem;
+  background-color: grey; /*Change to a HEX color light grey*/
+}
+
+.statementbox img {
+  width: 60%;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  padding: 0 4rem;
+}
+
+.informationbox {
+  width: 100%;
+}
+
+.informationbox h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+}
+
+.informationbox p {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.box {
+  width: 100%;
+  text-align: center;
+  background-color: black; /*Change to Dark Grey */
+  padding: 1.5rem 0;
+}
+
+.informationbox a {
+  font-size: 2rem;
+  color: white;
+  text-decoration: none;
+}
+
+/* Styling for the main body */
+.missionbox {
+  display: flex;
+  width: 100%;
+}
+
+.main {
+  width: 60%;
+  padding: 2.5rem 2rem 0 2rem;
+}
+
+#main {
+  border-right: 1px solid black; /*Change to light grey */
+}
+
+.main img, video {
+  width: 100%;
+  height: auto;
+  margin-bottom: 2.5rem;
+}
+
+.main h2 {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.main p {
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+  line-height: 1.75em;
+}
+
+.author {
+  font-size: 1rem;
+}
+
+/* Styling to the side bar of the main body */
+
+.sidelinks {
+  max-width: 40%;
+  padding: 2.5rem 0;
+}
+
+.infobox {
+  display: flex;
+  padding: 1.5rem;
+  height: auto;
+}
+
+.infobox:first-child {
+  padding-top: 0;
+  border-bottom: 1px solid black; /* Change to Grey */
+}
+
+.infobox:last-child {
+  background-color: grey;
+}
+
+.imagebox {
+  width: 35%;
+  height: auto;
+}
+
+.imagebox img {
+  width: 100%;
+  height: auto;
+}
+
+.additonalinfo {
+  width: 65%;
+  align-self: center;
+  padding-left: 1.5rem;
+}
+
+.additonalinfo h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.additonalinfo p {
+  font-size: 1.5rem;
+  line-height: 1.5em;
+  margin-bottom: 1rem;
+}
+
+.additonalinfo a {
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+/* Style for the Courses Section */
+
+.learning {
+  background-color: grey; /* Change to lighter grey */
+  padding: 32px 72px;
+}
+
+.learning h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 32px;
+  padding: 32px 0;
+}
+
+.coursebox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 32px 32px 32px;
+}
+
+.course {
+  background-color: white;
+  width: 31.5%;
+  margin-bottom: 32px;
+}
+
+#bottom {
+  margin-bottom: 0;
+}
+
+.course img {
+  max-width: 100%;
+}
+
+.course-desc {
+  border: 1px solid black; /* remove */
+  margin: 16px 16px 24px 16px;
+  padding: 16px 16px 0 16px;
+}
+
+.course-desc h2 {
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.course-desc h3 {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
+
+.course-desc p {
+  font-size: 1.5rem;
+  line-height: 1.5em;
+}
+
+/* Styling for Thesis Exhibit (Used Same Div Formatting as Mission Statment) this contains code that differs */
+.thesisbox {
+  padding-bottom: 32px
+}
+
+.thesisbox h1 {
+  text-align: center;
+  margin: 32px 0;
+  padding-top: 32px;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+#thesis .main video {
+  margin-bottom: 24px;
+}
+
+#thesis .main h2 {
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+#thesis .main p {
+  font-size: 1.5rem;
+  margin-bottom: 0;
+  line-height: 1.5em;
+}
+
+#thesis .infobox:first-child {
+  background-color: grey;
+  padding-top: 16px;
+  border: none;
+}
+
+#thesis .infobox:last-child {
+  background-color: white;
+}
+
+/* Style for Footer */
+
+footer {
+  padding: 16px 24px 54px 24px;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid black; /* Change to a light grey */
 }
