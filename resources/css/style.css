@@ -1,7 +1,8 @@
 html,
 body {
   font-size: 16px;
-  font-family: Helvetica, sans-serif;
+  font-family: 'Muli', sans-serif;
+  color: rgba(0,0,0,0.7);
 }
 
 /* Style for header */
@@ -15,6 +16,10 @@ header {
   padding: 20px 24px;
 }
 
+.mobile-header {
+  display: none;
+}
+
 .headerbox {
   display: flex;
   align-items: center;
@@ -26,12 +31,11 @@ header {
 }
 
 .headerbox span {
-  color: black;
   font-weight: 600;
 }
 
 .headerbox span:last-child {
-  color: grey;
+  color: #D3D3D3;
   font-weight: normal;
 }
 
@@ -45,25 +49,31 @@ nav span:last-child {
 
 /* Style for Mission Statement */
 .statementbox {
-  max-width: 100%;
+  width: 100%;
   display: flex;
   padding: 2.5rem 2rem;
-  background-color: grey; /*Change to a HEX color light grey*/
+  background-color: #D3D3D3;
 }
 
-.statementbox img {
+.statement-image {
   width: 60%;
 }
 
+.statement-image img {
+  width: 100%;
+  height: auto;
+}
+
 .information {
+  width: 40%;
   display: flex;
   flex-direction: column;
   align-self: center;
-  padding: 0 4rem;
+  margin: 0 4rem;
 }
 
 .informationbox {
-  width: 100%;
+  width: 80%;
 }
 
 .informationbox h1 {
@@ -80,8 +90,8 @@ nav span:last-child {
 .box {
   width: 100%;
   text-align: center;
-  background-color: black; /*Change to Dark Grey */
   padding: 1.5rem 0;
+  background-color: rgba(0,0,0,0.7);
 }
 
 .informationbox a {
@@ -102,7 +112,7 @@ nav span:last-child {
 }
 
 #main {
-  border-right: 1px solid black; /*Change to light grey */
+  border-right: 1px solid #D3D3D3;
 }
 
 .main img, video {
@@ -114,19 +124,25 @@ nav span:last-child {
 .main h2 {
   font-size: 3.5rem;
   margin-bottom: 1.5rem;
+  font-weight: 700;
 }
 
 .main p {
   font-size: 1.5rem;
   margin-bottom: 3rem;
   line-height: 1.75em;
+  color: rgba(0,0,0,0.55);
 }
 
-.author {
-  font-size: 1rem;
+p.author {
+  color: rgba(0,0,0,0.7);
 }
 
 /* Styling to the side bar of the main body */
+
+.sidelinks-mobile {
+  display: none;
+}
 
 .sidelinks {
   max-width: 40%;
@@ -141,11 +157,11 @@ nav span:last-child {
 
 .infobox:first-child {
   padding-top: 0;
-  border-bottom: 1px solid black; /* Change to Grey */
+  border-bottom: 1px solid #D3D3D3;
 }
 
 .infobox:last-child {
-  background-color: grey;
+  background-color: #D3D3D3;
 }
 
 .imagebox {
@@ -166,6 +182,7 @@ nav span:last-child {
 
 .additonalinfo h3 {
   font-size: 2rem;
+  font-weight: 700;
   margin-bottom: 1rem;
 }
 
@@ -173,23 +190,25 @@ nav span:last-child {
   font-size: 1.5rem;
   line-height: 1.5em;
   margin-bottom: 1rem;
+  color: rgba(0,0,0,0.55);
 }
 
 .additonalinfo a {
   font-size: 1.5rem;
   text-decoration: none;
+  color: #00BFFF;
 }
 
 /* Style for the Courses Section */
 
 .learning {
-  background-color: grey; /* Change to lighter grey */
+  background-color: #F5F5F5;
   padding: 32px 72px;
 }
 
 .learning h1 {
   text-align: center;
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: bold;
   margin-bottom: 32px;
   padding: 32px 0;
@@ -200,6 +219,10 @@ nav span:last-child {
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 0 32px 32px 32px;
+}
+
+.coursebox-mobile {
+  display: none;
 }
 
 .course {
@@ -217,28 +240,35 @@ nav span:last-child {
 }
 
 .course-desc {
-  border: 1px solid black; /* remove */
   margin: 16px 16px 24px 16px;
   padding: 16px 16px 0 16px;
 }
 
 .course-desc h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-bottom: 8px;
+  padding-bottom: 8px;
+  font-weight: 700;
 }
 
 .course-desc h3 {
-  font-size: 1.5rem;
+  font-size: 2rem;
+  font-weight: 300;
   margin-bottom: 8px;
+  padding: 8px 0;
+  color: rgba(0,0,0,0.55);
 }
 
 .course-desc p {
-  font-size: 1.5rem;
+  font-size: 2rem;
+  font-weight: 300;
   line-height: 1.5em;
+  color: rgba(0,0,0,0.55);
 }
 
 /* Styling for Thesis Exhibit (Used Same Div Formatting as Mission Statment) this contains code that differs */
 .thesisbox {
+  padding-right: 10px;
   padding-bottom: 32px
 }
 
@@ -246,7 +276,7 @@ nav span:last-child {
   text-align: center;
   margin: 32px 0;
   padding-top: 32px;
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: bold;
 }
 
@@ -255,18 +285,25 @@ nav span:last-child {
 }
 
 #thesis .main h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-bottom: 8px;
+  padding-bottom: 8px;
+  font-weight:
 }
 
 #thesis .main p {
   font-size: 1.5rem;
   margin-bottom: 0;
   line-height: 1.5em;
+  font-weight: 300;
+}
+
+#thesis .additonalinfo p {
+  font-weight: 300;
 }
 
 #thesis .infobox:first-child {
-  background-color: grey;
+  background-color: #D3D3D3;
   padding-top: 16px;
   border: none;
 }
@@ -280,6 +317,194 @@ nav span:last-child {
 footer {
   padding: 16px 24px 54px 24px;
   display: flex;
+  font-size: 1.15rem;
+  color: rgba(0,0,0,0.55);
   justify-content: space-between;
-  border-top: 1px solid black; /* Change to a light grey */
+  border-top: 1px solid #D3D3D3;
+}
+
+/* Below is a Media Query for Mobile Phone */
+
+@media only screen and (max-width: 480px) {
+  /*Documents changes to header*/
+  .main-header {
+    display: none;
+  }
+
+  .mobile-header {
+    display: flex;
+  }
+
+  .mobile-header img {
+    height: 2.75rem;
+  }
+
+  /*Documents changes to the main statement box*/
+  .statementbox {
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+
+  .statement-image {
+    width: 100%;
+  }
+
+  .information {
+    width: 100%;
+    margin: 0;
+    align-items: center;
+  }
+
+  .informationbox {
+    width: 90%;
+    margin: 32px;
+  }
+
+  .informationbox h1 {
+    font-size: 3rem;
+    margin-bottom: 32px;
+  }
+
+  .informationbox p {
+    font-size: 2rem;
+    margin-bottom: 24px;
+  }
+
+  .box {
+    background-color: #696969;
+  }
+
+  .informationbox a {
+    font-size: 1.5rem;
+  }
+
+  /* Documents changes to the mission statement area*/
+  #main {
+    display: none;
+  }
+
+  .sidelinks {
+    display: none;
+  }
+
+  .sidelinks-mobile {
+    display: block;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .infobox {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .infobox:first-child {
+    border-bottom: none;
+    padding-top: 32px;
+  }
+
+  .infobox:last-child {
+    background-color: white;
+    padding-bottom: 64px;
+  }
+
+  .imagebox {
+    width: 100%;
+  }
+
+  .infobox img {
+    width: 100%;
+    margin-bottom: 32px;
+  }
+
+  .additonalinfo {
+    width: 100%;
+    padding-left: 16px;
+  }
+
+  .additonalinfo p {
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.7);
+  }
+
+  /*Styling for the course box */
+
+  .learning {
+    background-color: #F5F5F5;
+    padding: 32px;
+  }
+
+  .learning h1 {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-size: 2.5rem;
+  }
+
+  .coursebox {
+    display: none;
+  }
+
+  .coursebox-mobile {
+    display: block;
+    width: 100%;
+  }
+
+  .course {
+    width: 100%;
+    margin-bottom: 8px;
+    background-color: #D3D3D3;
+  }
+
+  .course h2 {
+    padding: 16px 0 24px 16px;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .course:last-child {
+    margin-bottom: 0;
+  }
+
+  /* Styling for Thesis */
+  .thesisbox {
+    width: 100%;
+  }
+
+  .thesisbox h1{
+    padding: 0;
+    font-size: 2.5rem;
+  }
+
+  #thesis .main {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  #thesis .main h2, p {
+    display: none;
+  }
+
+  #thesis .main video {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  #thesis .sidelinks {
+    display: none;
+  }
+
+  /* Styling for footer */
+  footer {
+    padding: 16px;
+    width: 100%;
+    border: none;
+  }
+
+  footer nav {
+    display: none;
+  }
 }
