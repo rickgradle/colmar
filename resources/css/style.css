@@ -658,7 +658,8 @@ footer {
     padding: 0;
   }
 
-  #thesis .main h2, p {
+  #thesis .main h2,
+  #thesis .main p {
     display: none;
   }
 
