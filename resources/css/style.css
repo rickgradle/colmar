@@ -323,9 +323,184 @@ footer {
   border-top: 1px solid #D3D3D3;
 }
 
+/* media query when page break around 1069px */
+
+@media only screen and (max-width: 1069px) {
+  .main-header {
+    display: flex;
+    font-size: 1.5rem;
+  }
+
+  .mobile-header {
+    display: none;
+  }
+
+  /* Changes in styling to the statement box */
+
+  .statementbox {
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+
+  .statement-image {
+    width: 100%;
+    height: 30%;
+  }
+
+  .information {
+    width: 90%;
+    margin: 0;
+    align-items: flex-start;
+
+  }
+
+  .informationbox {
+    width: 90%;
+    margin: 32px;
+  }
+
+  .informationbox h1 {
+    font-size: 3rem;
+    margin-bottom: 32px;
+  }
+
+  .informationbox p {
+    font-size: 2rem;
+    margin-bottom: 24px;
+  }
+
+  .box {
+    background-color: #696969;
+  }
+
+  /* Changes to the mission statement section */
+
+  .informationbox a {
+    font-size: 1.5rem;
+  }
+
+  .sidelinks {
+    display: none;
+  }
+
+  .sidelinks-mobile {
+    display: block;
+    width: 40%;
+  }
+
+  .infobox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .infobox:first-child {
+    padding-top: 32px;
+  }
+
+  .imagebox {
+    width: 100%;
+  }
+
+  .additonalinfo {
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .additonalinfo h3 {
+    padding-top: 10px;
+    font-size: 1.5rem;
+  }
+
+  .additonalinfo p {
+    font-size: 1.25rem;
+  }
+
+  .additonalinfo a {
+    font-size: 1.25rem;
+  }
+
+  .course-desc h2 {
+    font-size: 2rem;
+  }
+
+  .course-desc h3 {
+    font-size: 1.5rem;
+  }
+
+  .course-desc p {
+    font-size: 1rem;
+  }
+
+  /* Styling for Thesis */
+  .thesisbox {
+    width: 100%;
+  }
+
+  .thesisbox h1{
+    padding: 0;
+    font-size: 2.5rem;
+  }
+
+  #thesis .main {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  #thesis .main video {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  #thesis .main h2,
+  #thesis .main p {
+    padding: 10px 32px 0 32px;
+  }
+
+  #thesis .sidelinks {
+    display: none;
+  }
+}
+/* media query for tablet devices */
+
+@media only screen and (max-width: 839px) {
+  .main-header {
+    display: none;
+  }
+
+  .mobile-header {
+    display: flex;
+  }
+
+  .mobile-header img {
+    height: 2.75rem;
+  }
+
+  .coursebox {
+    display: block;
+  }
+
+  .course {
+    width: 100%;
+  }
+
+  .course img {
+    width: 100%;
+  }
+
+  .course-desc {
+    padding-top: 0;
+    padding-bottom: 10px;
+  }
+}
+
 /* Below is a Media Query for Mobile Phone */
 
 @media only screen and (max-width: 480px) {
+
   /*Documents changes to header*/
   .main-header {
     display: none;
@@ -390,7 +565,7 @@ footer {
 
   .sidelinks-mobile {
     display: block;
-    max-width: 100%;
+    width: 100%;
     margin: 0;
     padding: 0;
   }
