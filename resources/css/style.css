@@ -6,7 +6,7 @@ body {
 }
 
 /* Style for header */
-header {
+.main-header {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -473,6 +473,11 @@ footer {
 
   .mobile-header {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+    font-size: 2rem;
+    padding: 20px 24px;
   }
 
   .mobile-header img {
@@ -508,6 +513,11 @@ footer {
 
   .mobile-header {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+    font-size: 2rem;
+    padding: 20px 24px;
   }
 
   .mobile-header img {
